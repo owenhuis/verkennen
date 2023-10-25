@@ -1,0 +1,14 @@
+{
+    "query": "select * from quest where experience = 300",
+    "resultcount": 1,
+    "result": [
+        {
+            "id": 1,
+            "title": "Find my shoe!",
+            "experience": 300,
+            "gold": 20,
+            "publisher": 132,
+            "holder": 0
+        }
+    ]
+}

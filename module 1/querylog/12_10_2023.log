@@ -1,0 +1,84 @@
+CREATE TABLE jouw_tabelnaam (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    naam VARCHAR(255),
+    description TEXT
+);
+; #09:27:56@dvc-sd.db
+ALTER TABLE jouw_tabelnaam
+RENAME TO planten
+; #09:29:42@dvc-sd.db
+select * from planten; #09:30:10@dvc-sd.db
+select * from planten; #09:30:26@dvc-sd.db
+DROP TABLE planten
+; #09:38:46@dvc-sd.db
+CREATE TABLE actie (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    naam VARCHAR(255),
+    description TEXT
+);
+; #09:41:32@games.db
+
+CREATE TABLE actiegames (
+    naam TEXT,
+    beschrijving TEXT
+);
+; #09:49:37@games.db
+INSERT INTO actiegames (naam, beschrijving)
+VALUES
+    ('fortnite', 'een grote battle royal game'),
+    ('spiderman2', 'is een actie avontuur game van de bekende held spiderman');
+; #09:49:53@games.db
+select * from actiegames; #09:50:08@games.db
+DROP TABLE actie
+; #09:50:42@games.db
+ALTER TABLE actiegames
+RENAME TO actie
+; #09:51:01@games.db
+select * from actie; #09:51:14@games.db
+CREATE TABLE avontuur (
+    naam TEXT,
+    beschrijving TEXT
+);
+; #09:56:56@games.db
+CREATE TABLE story (
+    naam TEXT,
+    beschrijving TEXT
+);
+; #09:57:04@games.db
+CREATE TABLE sanbox (
+    naam TEXT,
+    beschrijving TEXT
+);
+; #09:57:09@games.db
+CREATE TABLE towerdefense (
+    naam TEXT,
+    beschrijving TEXT
+);
+; #09:57:23@games.db
+CREATE TABLE fighting (
+    naam TEXT,
+    beschrijving TEXT
+);
+; #10:01:48@games.db
+CREATE TABLE rpg (
+    naam TEXT,
+    beschrijving TEXT
+);
+; #10:02:17@games.db
+CREATE TABLE simulation (
+    naam TEXT,
+    beschrijving TEXT
+);
+; #10:02:29@games.db
+CREATE TABLE puzzle (
+    naam TEXT,
+    beschrijving TEXT
+);
+; #10:02:36@games.db
+CREATE TABLE racing (
+    naam TEXT,
+    beschrijving TEXT
+);
+; #10:02:45@games.db
+alter table sanbox rename to sandbox
+; #10:04:51@games.db

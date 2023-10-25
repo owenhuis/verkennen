@@ -1,0 +1,7 @@
+select id, name, (select count(*) from npc where npc.city = city.id) as nrcitizens from city; #09:33:54@rubyquest.db
+
+
+#les 3 opdracht rubyquest deel 7
+select * from person; #09:28:37@rubyquest.db
+select * from person where name like 'b%'; #09:33:24@rubyquest.db
+select * from animal where type like '%a%'; #09:53:37@rubyquest.db

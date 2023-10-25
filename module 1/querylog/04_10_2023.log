@@ -1,0 +1,30 @@
+#les 2 opdracht rubyquest deel 4
+select * from person order by name; #10:20:47@rubyquest.db
+select * from person order by name desc;; #10:22:26@rubyquest.db
+select * from person order by 1-10 ; #10:23:19@rubyquest.db
+select id from person order by 1-10 ; #10:23:38@rubyquest.db
+select * from person id order by 1-10 ; #10:23:52@rubyquest.db
+select * from person order by id asc limit 10; #10:25:44@rubyquest.db
+select * from weapon order by price asc limit 5; #10:27:13@rubyquest.db
+select * from weapon order by price desc limit 5; #10:27:34@rubyquest.db
+select * from weapon ; #10:28:09@rubyquest.db
+select * from weapon order by attack desc limit 3; #10:29:01@rubyquest.db
+select * from animal; #10:29:48@rubyquest.db
+select distinct type from animal; #09:39:06@rubyquest.db
+select * from npc; #09:40:10@rubyquest.db
+select distinct profession from npc; #09:40:28@rubyquest.db
+.
+#les 3 opdracht rubyquest deel 5
+select * from creature where name = 'Killer Bee' or name =  'Orc'; #09:48:24@rubyquest.db
+select * from animal where speed = 6 and defense = 5; #09:50:28@rubyquest.db
+select * from animal; #09:52:02@rubyquest.db
+select count(*) from animal where type in ('Wolf', 'Bear', 'Eagle');
+; #09:52:54@rubyquest.db
+select * from person where attack = 10 and defense = 10 and agility = 10; #09:54:13@rubyquest.db
+select * from hero; #09:54:55@rubyquest.db
+select * from hero where intelligence not in (30,90); #09:55:26@rubyquest.db
+.
+#les 3 opdracht rubyquest deel 6
+select * from weapon where price between 100 and 1000; #10:03:30@rubyquest.db
+select * from weapon where attack between 300 and 600; #10:03:48@rubyquest.db
+select * from animal where defense between 7 and 9; #10:04:17@rubyquest.db

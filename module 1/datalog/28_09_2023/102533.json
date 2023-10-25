@@ -1,0 +1,9 @@
+{
+    "query": "select distinct 7 from person ",
+    "resultcount": 1,
+    "result": [
+        {
+            "7": 7
+        }
+    ]
+}

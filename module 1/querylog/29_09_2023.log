@@ -1,0 +1,48 @@
+select id, name  from person where id = 7;; #09:12:00@rubyquest.db
+select * from quest; #09:12:41@rubyquest.db
+select * from quest where gold = 0; #09:18:13@rubyquest.db
+select * from animal; #09:19:19@rubyquest.db
+select * from animal where type ; #09:20:37@rubyquest.db
+select * from animal where type = 'Sheep'; #09:20:58@rubyquest.db
+select * from city; #09:21:24@rubyquest.db
+select * from city where region = 1; #09:21:43@rubyquest.db
+select * from animal; #09:22:01@rubyquest.db
+select * from animal where owner <= 0; #09:22:45@rubyquest.db
+select * from animal where owner >= 0; #09:22:53@rubyquest.db
+select * from animal where owner > 0; #09:23:10@rubyquest.db
+select * from person ; #09:28:21@rubyquest.db
+select * from teachers ; #09:34:39@dvc-sd.db
+select * from person where agility between 100 and 200; #09:36:05@rubyquest.db
+select * from person where agility between 100 and 200 order by agility; #09:36:21@rubyquest.db
+select * from person where agility between 100 and 200 order by agility; #09:36:57@rubyquest.db
+select * from person where name like "%ran%"; #09:39:22@rubyquest.db
+select * from person where name like "%mo%"; #09:41:30@rubyquest.db
+select * from person where name like "%ran%"; #09:41:50@rubyquest.db
+#les 2 opdracht rubyquest deel 3
+select * from quest where experience >= 3000; #10:00:50@rubyquest.db
+select * from person where gold >= 1800; #10:01:36@rubyquest.db
+select * from person where gold <= 1850; #10:01:49@rubyquest.db
+select * from person where gold < 1850; #10:02:03@rubyquest.db
+select * from person where gold >= 1300; #10:02:23@rubyquest.db
+select * from weapon where price > 300; #10:03:03@rubyquest.db
+select * from weapon where price < 300; #10:03:10@rubyquest.db
+select * from quest where gold < experience; #10:03:45@rubyquest.db
+select * from quest where gold > experience; #10:03:53@rubyquest.db
+select * from creature ; #10:04:17@rubyquest.db
+select * from creature where max_health < health; #10:04:35@rubyquest.db
+select * from creature where max_health > health; #10:04:45@rubyquest.db
+select * from animal; #10:07:00@rubyquest.db
+select * from animal where type <> 'sheep';; #10:07:24@rubyquest.db
+select * from animal where type <> 'Sheep';; #10:07:35@rubyquest.db
+#les 2 opdracht rubyquest deel 4
+select * from person order by name; #10:20:47@rubyquest.db
+select * from person order by name desc;; #10:22:26@rubyquest.db
+select * from person order by 1-10 ; #10:23:19@rubyquest.db
+select id from person order by 1-10 ; #10:23:38@rubyquest.db
+select * from person id order by 1-10 ; #10:23:52@rubyquest.db
+select * from person order by id asc limit 10; #10:25:44@rubyquest.db
+select * from weapon order by price asc limit 5; #10:27:13@rubyquest.db
+select * from weapon order by price desc limit 5; #10:27:34@rubyquest.db
+select * from weapon ; #10:28:09@rubyquest.db
+select * from weapon order by attack desc limit 3; #10:29:01@rubyquest.db
+select * from animal; #10:29:48@rubyquest.db

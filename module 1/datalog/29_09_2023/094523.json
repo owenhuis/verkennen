@@ -1,0 +1,14 @@
+{
+    "query": "select * from quest where experience = 3000",
+    "resultcount": 1,
+    "result": [
+        {
+            "id": 36,
+            "title": "Away with the peace",
+            "experience": 3000,
+            "gold": 1200,
+            "publisher": 68,
+            "holder": 0
+        }
+    ]
+}

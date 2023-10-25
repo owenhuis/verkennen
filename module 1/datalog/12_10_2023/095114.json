@@ -1,0 +1,14 @@
+{
+    "query": "select * from actie",
+    "resultcount": 2,
+    "result": [
+        {
+            "naam": "fortnite",
+            "beschrijving": "een grote battle royal game"
+        },
+        {
+            "naam": "spiderman2",
+            "beschrijving": "is een actie avontuur game van de bekende held spiderman"
+        }
+    ]
+}

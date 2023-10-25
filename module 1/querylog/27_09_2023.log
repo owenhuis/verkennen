@@ -1,0 +1,5 @@
+select * from hero; #10:27:28@rubyquest.db
+select * from person; #10:28:01@rubyquest.db
+select * from quest; #10:28:18@rubyquest.db
+select * from creature; #10:28:41@rubyquest.db
+select * from armor name; #10:29:23@rubyquest.db

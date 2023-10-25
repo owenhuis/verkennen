@@ -1,0 +1,3 @@
+select * from person; #09:13:11@rubyquest.db
+select * from person, hero; #09:16:32@rubyquest.db
+select * from person, hero where person.id = hero.person; #09:19:05@rubyquest.db
