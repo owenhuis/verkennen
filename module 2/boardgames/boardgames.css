@@ -1,0 +1,23 @@
+
+body {
+    background-color: black;
+}
+header{
+    background-color: rgb(255, 0, 0);
+}
+header>p {
+    color:rgb(0, 0, 0);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+h2 {
+    color:white;
+}
+h3 {
+    color:yellow;
+}
+p {
+    color:rgb(255, 255, 255);
+}
+ul {
+    color:greenyellow;
+}
