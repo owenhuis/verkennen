@@ -1,0 +1,25 @@
+body {
+    background-color: blue;
+    color: white;
+}
+
+p {
+    color: yellow;
+}
+section p {
+    background-color: purple;
+}
+
+section > :first-child {
+    background-color: black;
+}
+
+section > p, ul {
+    background-color: green;
+}
+section > *, ul{
+    background-color: gray;
+}
+li {
+    background-color: aquamarine;
+}
