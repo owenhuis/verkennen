@@ -1,0 +1,41 @@
+body {
+    background-color: black;
+    color:white;
+}
+p{
+    background-color: red;
+    color: yellow;
+    font-family: italic;
+}
+
+
+header>P + section :first-of-type{
+    background-color: black;
+    color: blue;
+    font-weight: bolder;
+}
+
+h1 {
+    background-color: black;
+    color:lightgreen;
+}
+h2 {
+    background-color: black;
+    color:orange
+}
+section>p{
+    background-color: black;
+    color:yellow;
+   font-family: italic;
+}
+.p3{
+    color: red;
+    font-family: monospace;
+}
+
+
+footer{
+    color: red;
+    font-family: monospace;
+    text-decoration: underline;
+}
