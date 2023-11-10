@@ -20,3 +20,11 @@ p {
 ul {
     color:greenyellow;
 }
+nav a {
+    background-color: red;
+    color: yellow;
+    padding: 5px;
+    margin-right: 5px;
+    text-decoration: none;
+    font-size: 30px;
+}
