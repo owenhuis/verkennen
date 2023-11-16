@@ -1,14 +1,17 @@
 
 nav {
-
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  height: 400px;
   background-color: darkseagreen;
 }
 
 nav>div {
-
   height: 30px;
   background-color: lightseagreen;
-  margin:2px;
+  margin:2%;
   text-align: center;
   padding: 20px;
+  width: 100px;
 }
