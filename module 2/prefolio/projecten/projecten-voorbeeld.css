@@ -6,27 +6,40 @@
 
   section.projecten {
     /* zorg dat dit een flexbox wordt en zorg dat de items worden gewrapt */
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    
   }
 
   div.project {
     /* bepaal: opvulling, relatieve breedte tov section.projecten, tekstuitlijning (centrum), minimale breedte */
+    min-width: 200px;
+    width:20%;
   }
 
   p.logo {
     /* bepaal: vaste hoogte */
+    margin-top: auto;
   }
 
   p.logo img {
     /* bepaal: relatieve breedte van de afbeelding tov div.project */
+    width: 100px;
   }
 
   p.language {
     /* bepaal: font-relatieve lettergrootte */
+    font: relative;
   }
 
   p.title {
     /* bepaal: font-relatieve lettergrootte, letterdikte*/
+    font: relative;
+    font-weight: bold;
   }
   p.description{
     /* bepaal: font-relatieve lettergrootte, tekstuitlijning links*/
+    font: relative;
+    text-align: left;
   }
