@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Demo</title>
+</head>
+<body>
+  Input: <input id="input"><br>
+
+  <button id="bereken">Bereken</button>
+
+  <p id="resultaat"></p>
+
+
+  <script>
+    function berekening(event){
+      let getalstring = input.value;
+      let getal = Number(getalstring);
+      if (!isNaN(getal)){
+        let product = getal * 3;
+        resultaat.innerHTML = product;
+      }else {
+        resultaat.innerHTML = "ongeldig getal of letter"
+      }
+    }
+  
+    bereken.addEventListener('click',berekening);
+
+
+    input.title = "geef een getal om te vermenigvuldigen met 3"
+    input.value = 46
+  </script>
+
+  
+</body>
+</html>
