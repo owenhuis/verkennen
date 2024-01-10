@@ -1,0 +1,79 @@
+<!doctype html>
+<html>
+<head>
+  <title>base</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Base</h1>
+  <form id="form">
+    <p>
+        <label>stokbroden </label>
+        <input type="number" name="input" id="nr_baguettes" min="0">
+    </p>
+    <p>
+        <label>croissants </label>
+        <input type="number" name="input" id="nr_croissants" min="0">
+    </p>
+    <p>
+        <label>kortingsbonnen </label>
+        <input type="number" name="input" id="nr_coupons" min="0">
+    </p>
+    <input type="submit" id="submit_button" value="berekenen">
+  </form>
+  <div id="result">
+    <hr>
+    <h1>kassabon</h1>
+    <hr>
+    <p><label>stokbroden: </label><span id="receipt_baguettes">3 x 1.92 = 1.47</span></p>
+    <p><label>croissants: </label><span id="receipt_croissants">3 x 0.49 = 5.76</span></p>
+    <p><label>coupons: </label><span id="receipt_coupons">1 x 0.25 = 0.25</span></p>
+    <hr>
+    <p><label>te betallen: </label><span id="receipt_total">6.98</span></p>
+  </div>
+
+  <script>
+    const PRICE_BAGUETTES = 1.92;
+    const PRICE_CROISSANTS = 0.49;
+    const PRICE_COUPONS = 0.25;
+    function calculatereceipt(event){
+        alert('bon met aantal stokbroden:'+ nr_baguettes.value);
+        let amount_baguettes = Number(nr_baguettes.value || 0);
+        let total_baguettes = amount_baguettes * PRICE_BAGUETTES;
+        let display_baguettes = `${amount_baguettes} x ${PRICE_BAGUETTES} = ${total_baguettes}`;
+        console.log(display_baguettes);
+        receipt_baguettes.textContent = display_baguettes;
+
+        alert('bon met aantal croissants:'+ nr_croissants.value);
+        let amount_croissants = Number(nr_croissants.value || 0);
+        let total_croissants = amount_croissants * PRICE_CROISSANTS;
+        let display_croissants = `${amount_croissants} x ${PRICE_CROISSANTS} = ${total_croissants}`;
+        console.log(display_croissants);
+        receipt_croissants.textContent = display_croissants;
+        
+        alert('bon met aantal kortingsbonnene:'+ nr_coupons.value);
+        let amount_coupons = Number(nr_coupons.value || 0);
+        let total_coupons = amount_coupons * PRICE_COUPONS;
+        let display_coupons = `${amount_coupons} x ${PRICE_COUPONS} = ${total_coupons}`;
+        console.log(display_coupons);
+        receipt_coupons.textContent = display_coupons;
+    
+        let voedsel = total_baguettes + total_croissants;
+        let einprijs = Math.floor(alles / total_coupons)
+
+        if (amount_coupons > eindprijs){
+            amount_coupons = eindprijs
+        }
+        console.log(eindprijs)
+    }
+    submit_button.addEventListener('click',calculatereceipt)
+
+    // prevent document from default trying to really submit
+    function form_submit(event){
+      event.preventDefault();
+    }
+    form.addEventListener('submit',form_submit)
+
+  </script>
+</body>
+</html>
