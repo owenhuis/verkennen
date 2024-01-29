@@ -64,4 +64,21 @@ body {
   width: 100%;
   font-size: 24px;
 }
+h1 {
+  position: relative;
+}
 
+#setScore {
+  color: red;
+  position: absolute;
+  right: 0;
+}
+
+.setTeam {
+  background-color: yellow;
+  border: purple 2px solid;
+  margin: 3px;
+}
+.setScore {
+  border: blue 2px solid;
+}

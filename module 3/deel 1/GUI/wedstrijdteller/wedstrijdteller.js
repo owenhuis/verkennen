@@ -3,14 +3,22 @@ var lastScoringTeam = null;
 var lastServingTeamNow = null;
 var lastServingTeamPrevious = null;
 
+MAXSETSCORE = 25;
+
 inputTeam1.value = 'naam team 1'; // testdata
 inputTeam2.value = 'naam team 2 '; // testdata
 
-function start(event){
-    if (inputTeam1.value.trim() == '') return
-    inputTeams.style.display = 'None';
+function startset(){
     counterTeam1.counter = 0;
-    counterTeam2.counter = 0;
+    counterTeam2.counter = 0; 
+}
+
+function start(event){
+    if (inputTeam1.value.trim() == '') return;
+    inputTeams.style.display = 'None';
+    setScoreTeam1 = 0;
+    setScoreTeam2 = 0;
+    startset();
     displayNames();
     displayCounters();
     startServing();
@@ -52,19 +60,55 @@ function displayServing(teamCounter){
 
 startButton.addEventListener('click',start);
 
+function setEnded(){
+    return (counterTeam1.counter == MAXSETSCORE || counterTeam2.counter == MAXSETSCORE)
+}
+function displaySetScore(){
+    setScoreTeam1.textContent = setScoreTeam1.counter;
+    setScoreTeam2.textContent = setScoreTeam2.counter;
+
+}
+
+function UpdateSetScore(teamCounter){
+    if (teamCounter == counterTeam1){
+        return setScoreTeam1 ++;
+    } else {
+        return setScoreTeam2 ++;
+    }
+    displaySetScore();
+}
+
 function count(event){
     this.counter += 1;
     displayCounters();
     displayServing(this);
     lastScoringTeam = this;
+
     lastServingTeamPrevious = lastServingTeamNow;
     lastServingTeamNow = this;
+    if (setEnded()){
+        if (prompt('set beëindigt? j/n') == "j"){
+        UpdateSetScore(this);}
+     else {
+        alert
+    }}
 }
 
 
 function displayNames(event){
     nameTeam1.textContent = inputTeam1.value || '....';
     nameTeam2.textContent = inputTeam2.value || '....';
+    setTeam1.textContent = inputTeam1.value || '....';
+    setTeam2.textContent = inputTeam2.value || '....';
 }
 inputTeam1.addEventListener('change',displayNames);
 inputTeam2.addEventListener('change',displayNames);
+
+
+
+function toeter(){
+    alert('toet toet');
+    console.dir(this);
+}
+
+nameTeam1.toetermaar = toeter;
