@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Knop toevoegen met JS</title>
+</head>
+<body>
+    <h1>buttons</h1>
+    <p id="buttons"></p>
+    <p id="text">zin: </p>
+
+    <script>
+        words = ['hij','at','een','banaan','voor','altijd','ontbijt']
+        symboolLijst = ['.', ',', '!', '?']
+        function symbool(){
+        randomIndex = Math.floor(Math.random() * symboolLijst.length)
+        randomSymbool = symboolLijst[randomIndex]
+        return randomSymbool}
+        function typWord(event){
+            text.textContent +=  ` ${this.textContent}${symbool(symboolLijst)}`
+        }
+        for (wordIndex in words){
+        let btn = document.createElement('button');
+        btn.textContent = words[wordIndex]
+        btn.addEventListener('click',typWord)
+        buttons.appendChild(btn);}
+    </script>
+</body>
+</html>
