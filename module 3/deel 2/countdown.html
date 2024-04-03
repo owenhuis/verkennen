@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+    </head>
+    <body>
+        <button id="button-count">count</button>
+        <p id="show-count">starting count-down</p>
+
+        <script>
+            let buttonCount = document.getElementById('button-count');
+            let ajaxSucks = 10;
+            let showCount = document.getElementById('show-count');
+            buttonCount.addEventListener('click', doCount)
+
+            
+
+            function blastOff(event){
+                alert('*  BOOOOOOOOOOOOOOOOOOOOOOOOOOOOMMMMMMMMMMMMMM!!!! *********')
+                showCount.textContent = 'oh neee de ship is obgeblazen'
+            }
+
+            function doCount(event){
+                if (showCount.textContent <= 10) {
+                ajaxSucks -= 1}
+                console.log(ajaxSucks)
+                showCount.textContent = ajaxSucks.toString();
+                if (ajaxSucks == 0){
+                clearInterval(feyenoordWins)
+                showCount.textContent ='lift off'
+                setTimeout(blastOff, 3000)}
+                ajaxSucks == -1
+                feyenoordWins =setInterval(doCount,1000)
+            }
+            
+            
+            
+            
+        </script>
+        
+    </body>
+</html>
