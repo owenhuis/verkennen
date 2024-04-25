@@ -1,5 +1,5 @@
 <?php
-    date_default_timezone_set('Europe/Amsterdam');
+    date_default_timezone_set('America/Los_Angeles');
     $tijd_zone = date('H:i');
     $html_string = '';
     
@@ -26,7 +26,7 @@
 
 <!DOCTYPE html>
 <html>
-<head>2
+<head>
     <title>Prefab Response</title>
     <style>
         body {
